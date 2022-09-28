@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+</head>
+<body>
+
+    <h1><center>HTML tags demo</center></h1>
+
+    <hr>
+
+    <h2>Abbreviation tag, place your cursor on WHO</h2>
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    
+    <hr>
+
+    <h2>'dfn' tag : Similar to 'abbr' tag</h2>
+
+    <p><dfn><abbr title="Cascading Style Sheets">CSS</abbr>
+    </dfn> is a language that describes the style of an HTML document.</p>
+
+    <hr>
+
+    <h2>Address tag</h2>
+
+    <address>
+        Written by <a href="mailto:tarun.t@cumulations.com">Tarun teja</a>.<br>
+        Visit us at:<br>
+        cumulations technologies<br>
+        wilson garden,bengaluru<br>
+        IND
+    </address>
+
+    <hr>
+
+  <h2>Article tag</h2>
+
+    <article>
+        <h2>React</h2>
+        <p> Front End framework developed by Facebook.</p>
+    </article>
+        
+    <article>
+        <h2>Angular</h2>
+        <p>Front End framework developed by Google.</p>
+    </article>
+
+    <hr>
+
+    <h2>Aside tag example:</h2>
+
+    <p>Supports only Windows</p>
+
+<aside>
+<h4>Windows</h4>
+<p>Windows is a popular operating system</p>
+</aside>
+
+<hr>
+
+<h2>Bold text</h2>
+
+<p>This is normal text - <b>and this is bold text</b>.</p>
+
+
+
+  <hr>
+
+  <h2>blockquote example</h2>
+
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+
+    <hr>
+
+    <h2>Button</h2>
+
+    <button type="button">Sample button</button>
+    <hr>
+
+    <h2>Canvas : Drawing a black rectangle</h2>
+
+
+    <canvas id="myCanvas">
+        Your browser does not support the canvas tag.
+        </canvas>
+        
+        <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FFFFFFF";
+        ctx.fillRect(0, 0 , 80, 80);
+        </script>
+
+        <hr>
+        <h2> table , tr , th , caption tags</h2>
+
+        <table>
+            <caption>Monthly savings</caption>
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>200 RS</td>
+            </tr>
+            <tr>
+                <td>february</td>
+                <td>100 RS</td>
+              </tr>
+          </table>
+
+          <hr>
+
+          <h2> colgroup and col tag</h2>
+
+          <table>
+            <colgroup>
+              <col span="2" style="background-color:red">
+              <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+              <th>ISBN</th>
+              <th>Title</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>3476896</td>
+              <td>My first HTML</td>
+              <td>RS 53</td>
+            </tr>
+          </table>
+
+          <hr>
+
+          <h2>Data tag</h2>
+
+          <h4>For 'one' and 'two' , we have assigned data 1 and 2 and used it for calculation later</h4>
+
+          <data id='one' value="1">one</data>
+          <data id='two' value="2">two</data>
+
+          <p id="sum"></p>
+
+          <script>
+            let num1 = parseInt(document.getElementById("one").value);
+            let num2 = parseInt(document.getElementById("two").value);
+            let sum = num1 + num2;
+            document.getElementById("sum").innerText = "sum = "+ sum
+          </script>
+
+          <hr>
+
+
+          <h2>del tag example</h2>
+
+          <del>This is deleted</del>
+
+          <hr>
+          <h2>dialog tag</h2>
+          <br>
+
+          <dialog open>This is an open dialog window</dialog>
+
+          <br>
+          <br>
+          <br>
+          <hr>
+        
+
+          <h2>em tag</h2>
+
+          <p>You <em>have</em> to hurry up!</p>
+
+          <p>We <em>cannot</em> live like this.</p>
+
+          <hr>
+
+          <h2>Figure caption</h2>
+
+          <figure>
+            <img src="images\nature.jpg" alt="nature" style="width:50%">
+            <figcaption>Fig.1 - Nature</figcaption>
+          </figure>
+
+          <hr>
+
+          <h2>iframe</h2>
+          <iframe src="https://www.javatpoint.com/" title="Javatpoint"></iframe>
+          <hr>
+          <h2>kbd tag</h2>
+          <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+          <hr>
+
+          <h2>Dropdown using select</h2>
+
+          <label for="bikes">Choose a bike:</label>
+
+                <select name="bikes" id="bikes">
+                <option value="Suzuki-Gixxer">Suzuki Gixxer</option>
+                <option value="TVS-Apache">TVS Apache</option>
+                <option value="Honda-hornet">Honda hornet</option>
+                <option value="Hero-xpulse">Hero xpulse</option>
+                </select>
+
+        <hr>
+
+
+        <h2>svg tag</h2>
+
+
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+        <br>
+
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="80" stroke="yellow" stroke-width="4" fill="green" />
+        </svg>
+        <br>
+
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="80" stroke="red" stroke-width="4" fill="yellow" />
+        </svg>
+
+        <br>
+
+        <hr>
+
+        <h2>Events</h2>
+
+        <button onclick="alert('Hello')">Click me.</button>
+
+        
+
+        
+</body>
+</html>
